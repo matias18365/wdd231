@@ -1,12 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD231</title>
-    <link rel="stylesheet" href="styles/normalize.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WDD 231 - Web Frontend Development 1 - Matias Gutierrez</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals Matias Gutierrez. This a page that shows a little about my self and shows my skills on the html, css and javascript">
+    <meta name="author" content="Matias Gutierrez">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/home-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <script src="scripts/home.js" defer></script>
 </head>
 <body>
-    THIS IS MY PAGE
+    
+    <header>
+        <div class="header-content">
+            <img src="images/path-to-image.jpg" alt="About Me Image">
+            <h1 contenteditable>WDD 231 - Web Frontend Development 1 - Matias Gutierrez</h1>
+        </div>
+        <button type="button" id="menu" title="menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" title="Home">Home</a></li>
+                <li><a href="#" title="Chamber ">Chamber </a></li>
+                <li><a href="#" title="GitHub Profile">GitHub Profile</a></li>
+                <li><a href="www.linkedin.com/in/matíasgutiérrezalbarracin" title="LinkedIn ">LinkedIn </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main contenteditable>
+        <section class="card card1">
+            <h2>Course Work</h2>
+            <div class="top">
+                <ul>
+                    <li>Course Work 1</li>
+                    <li>Course Work 2</li>
+                    <li>Course Work 3</li>
+                </ul>
+            </div>
+        </section>
+        <section class="card card2">
+            <h2>Santa Cruz, Bolivia</h2>
+            <img src="images/santa_cruz.jpg" alt="Bolivia">
+            <p>Discover the beauty and culture of Santa Cruz!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright <span id="currentyear"></span> 🔥 Matias Gabriel Gutierrez Albarracin 🔥 Santa Cruz</p>
+        <p>Last modified: <span id="lastModified"></span></p>
+    </footer>
 </body>
 </html>
