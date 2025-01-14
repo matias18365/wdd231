@@ -225,6 +225,63 @@ main {
     margin: 1rem 0;
 }
 
+.card3 {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 1rem 0;
+}
+
+.filter-buttons {
+    margin-bottom: 1rem;
+}
+
+.filter-buttons button {
+    background: #356098;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: var(--nav-background-color) 0.3s;
+}
+
+.filter-buttons button:hover {
+    background: #2E86AB;
+}
+
+.course-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.course-card {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    transition: var(--nav-background-color) 0.3s;
+    width: 100%;
+    max-width: 300px;
+    text-align: left;
+}
+
+.course-card.completed {
+    background: #d4edda;
+    border-color: #c3e6cb;
+}
+
+#total-credits {
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
 
 footer {
     grid-row: 3 / 4;

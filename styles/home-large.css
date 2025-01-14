@@ -1,10 +1,29 @@
 @media screen and (min-width: 600px) {
     main {
+        display: grid;
         grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto 1fr auto;
+    }
+
+
+    .card3 {
+        grid-column: 1 / -1;
+    }
+
+
+    .course-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
     }
 }
+
 @media (max-width: 600px) {
     .header-content {
         align-items: flex-start;
+    }
+
+    .card3 {
+        grid-column: 1 / -1;
     }
 }
