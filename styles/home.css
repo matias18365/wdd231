@@ -247,7 +247,6 @@ main {
     margin: 0 5px;
     cursor: pointer;
     font-size: 16px;
-    transition: var(--nav-background-color) 0.3s;
 }
 
 .filter-buttons button:hover {
@@ -266,7 +265,6 @@ main {
     border-radius: 8px;
     padding: 1rem;
     margin: 0.5rem 0;
-    transition: var(--nav-background-color) 0.3s;
     width: 100%;
     max-width: 300px;
     text-align: left;
