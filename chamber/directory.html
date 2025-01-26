@@ -1,11 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Chamber</title>
+    <meta name="description" content="This page provides a list of local businesses and other organizations that belong to the chamber of commerce.">
+    <meta name="author" content="Matias Gutierrez">
+    <meta property="og:title" content="Chamber of Commerce Directory" />
+    <meta property="og:description" content="This page provides a list of local businesses and other organizations that belong to the chamber of commerce." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://yourwebsite.com/path/to/image.jpg" />
+    <meta property="og:url" content="https://yourwebsite.com/directory.html" />
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/chamber-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <script src="scripts/chamber.js" defer></script>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="icon" href="favicon.ico">
 </head>
 <body>
-    <h1>Chamber</h1>
+    
+    <header>
+        <div class="header-content">
+            <img src="images/santa_cruz.jpg" alt="About Me Image">
+            <h1>Directory</h1>
+        </div>
+        <button type="button" id="menu" title="menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" title="Home">Home</a></li>
+                <li><a href="#" title="Discover">Discover </a></li>
+                <li><a href="#" title="Directory">Directory</a></li>
+                <li><a href="https://www.linkedin.com/in/matíasgutiérrezalbarracin" title="Join  ">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="card card3">
+            <h2>Chamber of Commerce Directory</h2>
+            <div class="filter-buttons">
+                <button id="grid">Grid View</button>
+                <button id="list">List View</button>
+            </div>
+            <div id="course-list" class="course-list"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright <span id="currentyear"></span> 🔥 Matias Gabriel Gutierrez Albarracin 🔥 Santa Cruz</p>
+        <p>Last modified: <span id="lastModified"></span></p>
+    </footer>
 </body>
-</html>
