@@ -31,10 +31,6 @@
         align-items: center;
     }
 
-    .navigation {
-        flex-direction: column;
-    }
-
     .card3 {
         grid-column: 1 / -1;
     }

@@ -61,8 +61,8 @@ h1 {
 
 .header-content {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
 }
 
 .header-content img {
@@ -105,7 +105,7 @@ nav {
 }
 
 .navigation a {
-	display: block;
+	display: none;
 	padding: 1rem;
 	text-align: center;
 	text-decoration: none;
@@ -167,17 +167,17 @@ main {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust as needed */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 1rem;
 }
 
 .list {
-    display: block; /* Stack items vertically */
+    display: block;
 }
 
 .filter-buttons button:focus {
     outline: none;
-    border: 2px solid #2E86AB; /* Highlight on focus */
+    border: 2px solid #2E86AB;
 }
 
 .card {

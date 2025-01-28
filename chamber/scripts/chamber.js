@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
+    // Display current year and last modified date
     const yearSpan = document.querySelector('#currentyear');
     const currentYear = new Date();
     yearSpan.innerText = currentYear.getFullYear();
@@ -6,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const lastModifiedSpan = document.querySelector('#lastModified');
     lastModifiedSpan.innerText = document.lastModified;
 
+    // Menu button functionality
     const hamButton = document.querySelector('#menu');
     const navigation = document.querySelector('.navigation');
 
@@ -14,44 +16,32 @@ document.addEventListener("DOMContentLoaded", function() {
         hamButton.classList.toggle('open');
     });
 
+    // Buttons for toggling views
     const gridButton = document.querySelector("#grid");
     const listButton = document.querySelector("#list");
     const memberList = document.getElementById("course-list");
     const totalMembers = document.getElementById("total-credits");
 
-    if (gridButton && listButton) {
-        gridButton.addEventListener("click", () => {
-            toggleView('grid');
-        });
+    const url = 'https://matias18365.github.io/wdd231/chamber/data/members.json'; // URL to JSON
 
-        listButton.addEventListener("click", () => {
-            toggleView('list');
-        });
-    }
-
-    function toggleView(view) {
-        if (view === 'grid') {
-            memberList.classList.add("grid");
-            memberList.classList.remove("list");
-        } else if (view === 'list') {
-            memberList.classList.add("list");
-            memberList.classList.remove("grid");
-        }
-    }
-
+    // Function to fetch member data
     async function fetchMembers() {
         try {
-            const response = await fetch('../data/members.json');
+            const response = await fetch(url);
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
-            const members = await response.json();
-            displayMembers(members);
+            const data = await response.json();
+            // console.table(data);
+            displayMembers(data);
         } catch (error) {
             console.error('Error fetching member data:', error);
         }
     }
+    
+    fetchMembers();
 
+    // Function to display members on the page
     function displayMembers(members) {
         memberList.innerHTML = '';
         totalMembers.innerText = `Total Members: ${members.length}`;
@@ -72,5 +62,18 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    fetchMembers();
+
+    gridButton.addEventListener("click", () => toggleView('grid'));
+    listButton.addEventListener("click", () => toggleView('list'));
+    
+    // Function to toggle views
+    function toggleView(view) {
+        if (view === 'grid') {
+            memberList.classList.add("grid");
+            memberList.classList.remove("list");
+        } else if (view === 'list') {
+            memberList.classList.add("list");
+            memberList.classList.remove("grid");
+        }
+    }
 });
