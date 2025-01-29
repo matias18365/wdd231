@@ -152,6 +152,14 @@ nav {
 	.stuff {
 		margin: 1rem auto;
 	}
+    .course-list {
+        flex-direction: column; /* Stacks items vertically */
+    }
+
+    .course-card {
+        width: 90%; /* Loosens width on smaller screens */
+        margin: 0.5rem auto; /* Center-aligns the cards */
+    }
 }
 
 
