@@ -32,7 +32,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 throw new Error('Network response was not ok');
             }
             const data = await response.json();
-            // Pass the members array instead of the entire data object
             displayMembers(data.members);
         } catch (error) {
             console.error('Error fetching member data:', error);
