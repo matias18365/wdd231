@@ -1,65 +1,67 @@
-[
-    {
-        "name": "Microsoft",
-        "address": "One Microsoft Way, Redmond, WA 98052, USA",
-        "phone": "(425) 882-8080",
-        "website": "https://www.microsoft.com",
-        "image": "https://logo.clearbit.com/microsoft.com",
-        "membershipLevel": 3,
-        "description": "A multinational technology company known for software, PCs, and consumer electronics."
-    },
-    {
-        "name": "Hyundai",
-        "address": "12, Heolleung-ro, Seocho-gu, Seoul, South Korea",
-        "phone": "(02) 3464-1114",
-        "website": "https://www.hyundai.com",
-        "image": "https://www.hyundai.com/etc/designs/hyundai/ww/en/images/common/logo.png",
-        "membershipLevel": 3,
-        "description": "A leading automotive manufacturer known for quality vehicles and innovative technology."
-    },
-    {
-        "name": "Google",
-        "address": "1600 Amphitheatre Parkway, Mountain View, CA 94043, USA",
-        "phone": "(650) 253-0000",
-        "website": "https://www.google.com",
-        "image": "https://logo.clearbit.com/google.com",
-        "membershipLevel": 3,
-        "description": "The world's leading search engine and a major player in software and online services."
-    },
-    {
-        "name": "Adidas",
-        "address": "Adidas AG, Adolf-Dassler-Strasse 1, 91074 Herzogenaurach, Germany",
-        "phone": "+49 9132 84 0",
-        "website": "https://www.adidas.com",
-        "image": "https://logo.clearbit.com/adidas.com",
-        "membershipLevel": 3,
-        "description": "A multinational corporation that designs and manufactures shoes, clothing, and accessories."
-    },
-    {
-        "name": "Tesla",
-        "address": "3500 Deer Creek Road, Palo Alto, CA 94304, USA",
-        "phone": "(650) 685-3500",
-        "website": "https://www.tesla.com",
-        "image": "https://logo.clearbit.com/tesla.com",
-        "membershipLevel": 3,
-        "description": "An electric vehicle and clean energy company based in the United States."
-    },
-    {
-        "name": "Apple",
-        "address": "1 Apple Park Way, Cupertino, CA 95014, USA",
-        "phone": "(408) 996-1010",
-        "website": "https://www.apple.com",
-        "image": "https://logo.clearbit.com/apple.com",
-        "membershipLevel": 3,
-        "description": "A global leader in technology, design, and innovation, well known for its products like iPhone and Mac."
-    },
-    {
-        "name": "Bose",
-        "address": "100 The Mountain Rd, Frisco, CO 80443, USA",
-        "phone": "(800) 999-2673",
-        "website": "https://www.bose.com",
-        "image": "https://logo.clearbit.com/bose.com",
-        "membershipLevel": 3,
-        "description": "An American corporation that designs, develops, and sells audio equipment."
-    }
-]
+{
+    "members": [
+        {
+            "name": "Microsoft",
+            "address": "One Microsoft Way, Redmond, WA 98052, USA",
+            "phone": "(425) 882-8080",
+            "website": "https://www.microsoft.com",
+            "image": "https://logo.clearbit.com/microsoft.com",
+            "membershipLevel": 3,
+            "description": "A multinational technology company known for software, PCs, and consumer electronics."
+        },
+        {
+            "name": "Hyundai",
+            "address": "12, Heolleung-ro, Seocho-gu, Seoul, South Korea",
+            "phone": "(02) 3464-1114",
+            "website": "https://www.hyundai.com",
+            "image": "https://www.hyundai.com/etc/designs/hyundai/ww/en/images/common/logo.png",
+            "membershipLevel": 3,
+            "description": "A leading automotive manufacturer known for quality vehicles and innovative technology."
+        },
+        {
+            "name": "Google",
+            "address": "1600 Amphitheatre Parkway, Mountain View, CA 94043, USA",
+            "phone": "(650) 253-0000",
+            "website": "https://www.google.com",
+            "image": "https://logo.clearbit.com/google.com",
+            "membershipLevel": 3,
+            "description": "The world's leading search engine and a major player in software and online services."
+        },
+        {
+            "name": "Adidas",
+            "address": "Adidas AG, Adolf-Dassler-Strasse 1, 91074 Herzogenaurach, Germany",
+            "phone": "+49 9132 84 0",
+            "website": "https://www.adidas.com",
+            "image": "https://logo.clearbit.com/adidas.com",
+            "membershipLevel": 3,
+            "description": "A multinational corporation that designs and manufactures shoes, clothing, and accessories."
+        },
+        {
+            "name": "Tesla",
+            "address": "3500 Deer Creek Road, Palo Alto, CA 94304, USA",
+            "phone": "(650) 685-3500",
+            "website": "https://www.tesla.com",
+            "image": "https://logo.clearbit.com/tesla.com",
+            "membershipLevel": 3,
+            "description": "An electric vehicle and clean energy company based in the United States."
+        },
+        {
+            "name": "Apple",
+            "address": "1 Apple Park Way, Cupertino, CA 95014, USA",
+            "phone": "(408) 996-1010",
+            "website": "https://www.apple.com",
+            "image": "https://logo.clearbit.com/apple.com",
+            "membershipLevel": 3,
+            "description": "A global leader in technology, design, and innovation, well known for its products like iPhone and Mac."
+        },
+        {
+            "name": "Bose",
+            "address": "100 The Mountain Rd, Frisco, CO 80443, USA",
+            "phone": "(800) 999-2673",
+            "website": "https://www.bose.com",
+            "image": "https://logo.clearbit.com/bose.com",
+            "membershipLevel": 3,
+            "description": "An American corporation that designs, develops, and sells audio equipment."
+        }
+    ]
+}

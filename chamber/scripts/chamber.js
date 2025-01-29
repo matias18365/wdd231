@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const url = 'https://matias18365.github.io/wdd231/chamber/data/members.json'; // URL to JSON
 
     // Function to fetch member data
-    async function fetchMembers() {
+    async function fetchMembers(url) {
         try {
             const response = await fetch(url);
             if (!response.ok) {
