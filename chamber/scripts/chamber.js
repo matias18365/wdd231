@@ -45,6 +45,7 @@ document.addEventListener("DOMContentLoaded", function() {
         totalMembers.innerText = `Total Members: ${members.length}`;
 
         members.forEach(member => {
+            console.log(members)
             const memberCard = document.createElement('div');
             memberCard.className = 'course-card';
             memberCard.innerHTML = `
