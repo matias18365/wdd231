@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Function to display members on the page
     function displayMembers(members) {
         memberList.innerHTML = '';
-        totalMembers.innerText = `Total Members: ${members.length}`;
+        //totalMembers.innerText = `Total Members: ${members.length}`;
 
         console.log(members)
         members.forEach(member => {

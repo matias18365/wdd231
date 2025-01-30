@@ -10,13 +10,13 @@
             "description": "A multinational technology company known for software, PCs, and consumer electronics."
         },
         {
-            "name": "Hyundai",
-            "address": "12, Heolleung-ro, Seocho-gu, Seoul, South Korea",
-            "phone": "(02) 3464-1114",
-            "website": "https://www.hyundai.com",
-            "image": "https://www.hyundai.com/etc/designs/hyundai/ww/en/images/common/logo.png",
+            "name": "Xiaomi",
+            "address": "No. 68 Qinghe Middle Street, Beijing, China",
+            "phone": "+86 400 100 5678",
+            "website": "https://www.mi.com",
+            "image": "https://logo.clearbit.com/mi.com",
             "membershipLevel": 3,
-            "description": "A leading automotive manufacturer known for quality vehicles and innovative technology."
+            "description": "A Chinese electronics company making smartphones, mobile apps, laptops, and related consumer electronics."
         },
         {
             "name": "Google",
