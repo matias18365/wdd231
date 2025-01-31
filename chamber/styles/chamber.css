@@ -159,6 +159,7 @@ nav {
     .course-card {
         width: 90%; /* Loosens width on smaller screens */
         margin: 0.5rem auto; /* Center-aligns the cards */
+        min-height: 200px;
     }
 }
 
@@ -193,36 +194,6 @@ main {
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.card1 {
-    background: var(--accent1-color);
-}
-.card1 h2 {
-    text-align: center;
-}
-
-.card2 {
-    background: var(--accent2-color);
-    color: #fff;
-    padding: 2rem;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.card2 h2 {
-    margin-bottom: 1rem;
-}
-
-.card2 img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.card2 p {
-    margin: 1rem 0;
 }
 
 .card3 {
@@ -267,7 +238,7 @@ main {
     margin: 0.5rem 0;
     width: 100%;
     max-width: 300px;
-    text-align: left;
+    text-align: center;
 }
 
 .course-card.completed {
@@ -292,10 +263,4 @@ footer {
 
 footer p {
     color: #fff;
-}
-
-.highlight {
-	color: navy;
-	font-weight: 700;
-	font-family: hebrew;
 }
