@@ -159,7 +159,8 @@ nav {
     .course-card {
         width: 90%; /* Loosens width on smaller screens */
         margin: 0.5rem auto; /* Center-aligns the cards */
-        min-height: 200px;
+        min-width: 200px;
+        min-height: 300px;
     }
 }
 
