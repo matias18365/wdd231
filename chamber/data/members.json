@@ -15,7 +15,7 @@
             "phone": "+86 400 100 5678",
             "website": "https://www.mi.com",
             "image": "https://logo.clearbit.com/mi.com",
-            "membershipLevel": 3,
+            "membershipLevel": 2,
             "description": "A Chinese electronics company making smartphones, mobile apps, laptops, and related consumer electronics."
         },
         {
@@ -33,7 +33,7 @@
             "phone": "+49 9132 84 0",
             "website": "https://www.adidas.com",
             "image": "https://logo.clearbit.com/adidas.com",
-            "membershipLevel": 3,
+            "membershipLevel": 2,
             "description": "A multinational corporation that designs and manufactures shoes, clothing, and accessories."
         },
         {
@@ -42,7 +42,7 @@
             "phone": "(650) 685-3500",
             "website": "https://www.tesla.com",
             "image": "https://logo.clearbit.com/tesla.com",
-            "membershipLevel": 3,
+            "membershipLevel": 2,
             "description": "An electric vehicle and clean energy company based in the United States."
         },
         {
@@ -51,7 +51,7 @@
             "phone": "(408) 996-1010",
             "website": "https://www.apple.com",
             "image": "https://logo.clearbit.com/apple.com",
-            "membershipLevel": 3,
+            "membershipLevel": 2,
             "description": "A global leader in technology, design, and innovation, well known for its products like iPhone and Mac."
         },
         {

@@ -153,12 +153,12 @@ nav {
 		margin: 1rem auto;
 	}
     .course-list {
-        flex-direction: column; /* Stacks items vertically */
+        flex-direction: column;
     }
 
     .course-card {
-        width: 90%; /* Loosens width on smaller screens */
-        margin: 0.5rem auto; /* Center-aligns the cards */
+        width: 90%;
+        margin: 0.5rem auto;
         min-width: 200px;
         min-height: 300px;
     }
@@ -229,6 +229,38 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    max-width: 2rem; /* Adjust size as necessary */
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: #eee;
+    text-shadow: 2px 2px 4px rgba(8, 1, 1, 0.7);
+}
+
+.cta-button {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background: #356098;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
 .course-card {

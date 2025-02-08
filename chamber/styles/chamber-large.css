@@ -34,4 +34,9 @@
     .card3 {
         grid-column: 1 / -1;
     }
+    .hero h1 {
+        font-size: 32px;
+        max-width: 32px;
+        }
+
 }
