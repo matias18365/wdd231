@@ -253,6 +253,35 @@ main {
     text-shadow: 2px 2px 4px rgba(8, 1, 1, 0.7);
 }
 
+.events {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.events h2 {
+    color: #333;
+}
+
+.events ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.events li {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.events li:last-child {
+    border-bottom: none;
+}
+
+.events strong {
+    color: #2E86AB;
+}
+
 .cta-button {
     display: inline-block;
     margin: 20px 0;
