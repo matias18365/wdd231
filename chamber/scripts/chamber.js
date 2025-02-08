@@ -22,12 +22,12 @@ document.addEventListener("DOMContentLoaded", function() {
     const memberList = document.getElementById("course-list");
     const totalMembers = document.getElementById("total-credits");
 
-    const url = 'https://matias18365.github.io/wdd231/chamber/data/members.json'; // URL to JSON
+    const membersUrl = 'https://matias18365.github.io/wdd231/chamber/data/members.json'; // URL to JSON
 
     // Function to fetch member data
     async function fetchMembers() {
         try {
-            const response = await fetch(url);
+            const response = await fetch(membersUrl);
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
@@ -64,14 +64,43 @@ document.addEventListener("DOMContentLoaded", function() {
     gridButton.addEventListener("click", () => toggleView('grid'));
     listButton.addEventListener("click", () => toggleView('list'));
     
-    // Function to toggle views
-    function toggleView(view) {
-        if (view === 'grid') {
-            memberList.classList.add("grid");
-            memberList.classList.remove("list");
-        } else if (view === 'list') {
-            memberList.classList.add("list");
-            memberList.classList.remove("grid");
-        }
+// select HTML elements in the document
+const currentTemp = document.querySelector('#current-temp');
+const weatherIcon = document.querySelector('#weather-icon');
+const captionDesc = document.querySelector('figcaption');
+
+// Constants for latitude, longitude, and API key
+const lat = -17.79;
+const lon = -63.18;
+const apiKey = '4f8c8e86f0ed85c6b75cb3375f7e9d44';
+
+const currentWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
+
+
+async function apiFetch() {
+    try {
+    const response = await fetch(currentWeatherUrl);
+    if (response.ok) {
+        const data = await response.json();
+        displayResults(data);
+    } else {
+        throw Error(await response.text());
     }
+    } catch (error) {
+    console.log(error);
+    }
+}
+
+
+function displayResults(data) {
+currentTemp.innerHTML = `${data.main.temp}&deg;C`;
+const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+    let desc = data.weather[0].description;
+
+    weatherIcon.setAttribute('src', iconsrc);
+    weatherIcon.setAttribute('alt', desc);
+captionDesc.textContent = `${desc.charAt(0).toUpperCase() + desc.slice(1)}`;
+}
+
+apiFetch();   
 });
