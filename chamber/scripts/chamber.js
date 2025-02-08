@@ -61,8 +61,8 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    gridButton.addEventListener("click", () => toggleView('grid'));
-    listButton.addEventListener("click", () => toggleView('list'));
+    // gridButton.addEventListener("click", () => toggleView('grid'));
+    // listButton.addEventListener("click", () => toggleView('list'));
     
 // select HTML elements in the document
 const currentTemp = document.querySelector('#current-temp');
