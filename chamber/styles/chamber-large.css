@@ -14,7 +14,7 @@
 
     main {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 1rem;
     }
 
@@ -72,6 +72,27 @@
         width: 50px;
         height: auto;
     }
+
+    .membership-form {
+        grid-column: 1 / 2;
+        margin-right: 20px;
+    }
+
+    .membership-levels {
+        grid-column: 2 / 3;
+        display: grid;
+        grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+        gap: 10px;
+    }
+
+    .card {
+        margin: 10px 0;
+        background-color: #f0f0f0;
+        padding: 15px;
+        border-radius: 5px;
+        text-align: center;
+    }
+
 }
 
 @media (max-width: 600px) {

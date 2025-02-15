@@ -244,7 +244,7 @@ main {
 
 .hero h1 {
     font-size: 2rem;
-    max-width: 2rem; /* Adjust size as necessary */
+    max-width: 2rem;
     position: absolute;
     top: 30%;
     left: 20%;
@@ -313,6 +313,39 @@ main {
     margin-top: 1rem;
 }
 
+.membership-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 1rem 0;
+}
+.membership-form label {
+    margin-bottom: 0.5rem;
+}
+.membership-form input,
+.membership-form textarea,
+.membership-form select {
+    margin-bottom: 0.5rem;
+}
+
+.membership-levels {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    background-color: #f0f0f0;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.learn-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #2E86AB;
+    text-decoration: none;
+}
 
 footer {
     grid-row: 3 / 4;

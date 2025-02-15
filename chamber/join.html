@@ -1,11 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chamber of Commerce Join Page</title>
+    <meta name="description" content="This page provides a list of local businesses and other organizations that belong to the chamber of commerce.">
+    <meta name="author" content="Matias Gutierrez">
+    <meta property="og:title" content="Chamber of Commerce Join Page" />
+    <meta property="og:description" content="This page provides a list of local businesses and other organizations that belong to the chamber of commerce." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://matias18365.github.io/wdd231/chamber/images/santa_cruz.jpg" />
+    <meta property="og:url" content="https://matias18365.github.io/wdd231/chamber/directory.html" />
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/chamber-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="icon" href="favicon.ico">
 </head>
 <body>
-    <h1>THIS WILL BE THE JOIN PAGE</h1>
+    
+    <header>
+        <div class="header-content">
+            <img src="images/santa_cruz.jpg" alt="About Me Image">
+            <h1>Home Page</h1>
+        </div>
+        <button type="button" id="menu" title="menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="#" title="Discover">Discover </a></li>
+                <li><a href="directory.html" title="Directory">Directory</a></li>
+                <li><a href="join.html" title="Join">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="card3">
+        <form class="membership-form" method="get" action="thankyou.html">
+            <h2>Membership Application Form</h2>
+    
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" title="Applicant's first name" required autocomplete="given-name" />
+    
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" title="Applicant's last name" required autocomplete="family-name" />
+    
+            <label for="org_title">Organizational Title:</label>
+            <input type="text" id="org_title" name="org_title" title="Organizational Title" required autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" />
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" title="Email" required autocomplete="email" placeholder="example@example.com" />
+    
+            <label for="phone">Cell Phone:</label>
+            <input type="tel" id="phone" name="phone" title="Mobile Phone" required autocomplete="tel" />
+    
+            <label for="business_name">Organization:</label>
+            <input type="text" id="business_name" name="business_name" title="Organization Name" required autocomplete="organization" />
+    
+            <label for="description">Business/Organization Description:</label>
+            <textarea id="description" name="description" title="Organization Description"></textarea>
+    
+            <label for="membership_level">Membership Level:</label>
+            <select id="membership_level" name="membership_level">
+                <option value="NP Membership">NP Membership (No Fee)</option>
+                <option value="Bronze Membership">Bronze Membership</option>
+                <option value="Silver Membership">Silver Membership</option>
+                <option value="Gold Membership">Gold Membership</option>
+            </select>
+    
+            <input type="hidden" id="timestamp" name="timestamp" value="<?php echo date('Y-m-d H:i:s'); ?>">
+    
+            <input type="submit" value="Submit">
+        </form>
+    
+        <div class="membership-levels">
+            <h2>Membership Levels</h2>
+            <div class="card" id="card1">
+                <h3>Non Profit Membership</h3>
+                <a href="#" class="learn-more" data-modal="modal1">Learn More</a>
+            </div>
+            <div class="card" id="card2">
+                <h3>Bronze Membership</h3>
+                <a href="#" class="learn-more" data-modal="modal2">Learn More</a>
+            </div>
+            <div class="card" id="card3">
+                <h3>Silver Membership</h3>
+                <a href="#" class="learn-more" data-modal="modal3">Learn More</a>
+            </div>
+            <div class="card" id="card4">
+                <h3>Gold Membership</h3>
+                <a href="#" class="learn-more" data-modal="modal4">Learn More</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Copyright <span id="currentyear"></span> 🔥 Matias Gabriel Gutierrez Albarracin 🔥 Santa Cruz</p>
+        <p>Last modified: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/chamber.js" defer></script>
 </body>
 </html>
