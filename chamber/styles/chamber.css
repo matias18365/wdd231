@@ -359,3 +359,21 @@ footer {
 footer p {
     color: #fff;
 }
+
+@keyframes slide-in {
+    from {
+        transform: translateY(calc(100vh - 100%));
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.membership-levels {
+    animation-duration: 3s;
+    animation-name: slide-in;
+    animation-fill-mode: forwards;
+}

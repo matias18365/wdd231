@@ -73,26 +73,32 @@
     
             <input type="submit" value="Submit">
         </form>
-    
         <div class="membership-levels">
             <h2>Membership Levels</h2>
-            <div class="card" id="card1">
+            <div class="card" id="card1" onclick="displayMembershipDetails('Non Profit Membership', ['Basic Access'], 0)">
                 <h3>Non Profit Membership</h3>
-                <a href="#" class="learn-more" data-modal="modal1">Learn More</a>
+                <a href="#" class="learn-more">Learn More</a>
             </div>
-            <div class="card" id="card2">
+            <div class="card" id="card2" onclick="displayMembershipDetails('Bronze Membership', ['Basic Access', '5% Discount'], 50)">
                 <h3>Bronze Membership</h3>
-                <a href="#" class="learn-more" data-modal="modal2">Learn More</a>
+                <a href="#" class="learn-more">Learn More</a>
             </div>
-            <div class="card" id="card3">
+            <div class="card" id="card3" onclick="displayMembershipDetails('Silver Membership', ['Basic Access', '10% Discount', 'Free Event'], 100)">
                 <h3>Silver Membership</h3>
-                <a href="#" class="learn-more" data-modal="modal3">Learn More</a>
+                <a href="#" class="learn-more">Learn More</a>
             </div>
-            <div class="card" id="card4">
+            <div class="card" id="card4" onclick="displayMembershipDetails('Gold Membership', ['All Benefits', '20% Discount'], 200)">
                 <h3>Gold Membership</h3>
-                <a href="#" class="learn-more" data-modal="modal4">Learn More</a>
+                <a href="#" class="learn-more">Learn More</a>
             </div>
         </div>
+        <dialog id="membership-details">
+            <form method="dialog">
+                <h2>Membership Information</h2>
+                <div id="membership-info"></div>
+                <button id="closeMembershipModal">✖</button>
+            </form>
+        </dialog>
     </main>
 
     <footer>

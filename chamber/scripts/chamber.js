@@ -190,24 +190,70 @@ fetchGoldMembers();
 
 
 
-// Function to check if on the thank you page and populate the data
-function checkThankYouPage() {
-    if (window.location.pathname.includes("thankyou.html")) {
+    // Functions related to membership levels
+    function displayMembershipDetails(level, benefits, cost) {
+        const membershipModal = document.getElementById('membership-details');
+        const membershipInfo = document.getElementById('membership-info');
 
-        const urlParams = new URLSearchParams(window.location.search);
+        membershipInfo.innerHTML = `
+            <p><strong>Membership Level:</strong> ${level}</p>
+            <p><strong>Benefits:</strong> ${benefits.join(', ')}</p>
+            <p><strong>Cost:</strong> $${cost}</p>
+        `;
 
-        document.getElementById('first-name').textContent = urlParams.get('first_name') || "N/A";
-        document.getElementById('last-name').textContent = urlParams.get('last_name') || "N/A";
-        document.getElementById('org-title').textContent = urlParams.get('org_title') || "N/A";
-        document.getElementById('email').textContent = urlParams.get('email') || "N/A";
-        document.getElementById('phone').textContent = urlParams.get('phone') || "N/A";
-        document.getElementById('business-name').textContent = urlParams.get('business_name') || "N/A";
-        document.getElementById('description').textContent = urlParams.get('description') || "N/A";
-        document.getElementById('membership-level').textContent = urlParams.get('membership_level') || "N/A";
-        
-        document.getElementById('timestamp').textContent = urlParams.get('timestamp') || "No timestamp available";
+        membershipModal.showModal();
+
+        const closeButton = document.getElementById('closeMembershipModal');
+        closeButton.addEventListener('click', () => {
+            membershipModal.close();
+        });
     }
-}
 
-checkThankYouPage();
+    const membershipCards = document.querySelectorAll('.membership-levels .card');
+    membershipCards.forEach(card => {
+        card.addEventListener('click', () => {
+            const level = card.querySelector('h3').innerText;
+            let benefits, cost;
+
+            switch(level) {
+                case 'Non Profit Membership':
+                    benefits = ['Basic Access'];
+                    cost = 0;
+                    break;
+                case 'Bronze Membership':
+                    benefits = ['Basic Access', '5% Discount'];
+                    cost = 50;
+                    break;
+                case 'Silver Membership':
+                    benefits = ['Basic Access', '10% Discount', 'Free Event'];
+                    cost = 100;
+                    break;
+                case 'Gold Membership':
+                    benefits = ['All Benefits', '20% Discount'];
+                    cost = 200;
+                    break;
+            }
+
+            displayMembershipDetails(level, benefits, cost);
+        });
+    });
+
+    // Function to check if on the thank you page and populate the data
+    function checkThankYouPage() {
+        if (window.location.pathname.includes("thankyou.html")) {
+            const urlParams = new URLSearchParams(window.location.search);
+
+            document.getElementById('first-name').textContent = urlParams.get('first_name') || "N/A";
+            document.getElementById('last-name').textContent = urlParams.get('last_name') || "N/A";
+            document.getElementById('org-title').textContent = urlParams.get('org_title') || "N/A";
+            document.getElementById('email').textContent = urlParams.get('email') || "N/A";
+            document.getElementById('phone').textContent = urlParams.get('phone') || "N/A";
+            document.getElementById('business-name').textContent = urlParams.get('business_name') || "N/A";
+            document.getElementById('description').textContent = urlParams.get('description') || "N/A";
+            document.getElementById('membership-level').textContent = urlParams.get('membership_level') || "N/A";
+            document.getElementById('timestamp').textContent = urlParams.get('timestamp') || "No timestamp available";
+        }
+    }
+
+    checkThankYouPage();
 });
