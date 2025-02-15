@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chamber of Commerce Thank You</title>
+    <meta name="description" content="This page provides a list of local businesses and other organizations that belong to the chamber of commerce.">
+    <meta name="author" content="Matias Gutierrez">
+    <meta property="og:title" content="Chamber of Commerce Thank You" />
+    <meta property="og:description" content="This page provides a list of local businesses and other organizations that belong to the chamber of commerce." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://matias18365.github.io/wdd231/chamber/images/santa_cruz.jpg" />
+    <meta property="og:url" content="https://matias18365.github.io/wdd231/chamber/directory.html" />
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/chamber-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="icon" href="favicon.ico">
+    <style>
+        main {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        .application-details {
+            display: grid;
+            grid: column;
+            margin-bottom: 1rem;
+        }
+        .application-details p {
+            display: grid;
+            grid: column; 
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Thank You for Joining Us!</h1>
+    </header>
+
+    <main class="card3">
+        <h2>Your Membership Application Has Been Received</h2>
+        <p>Thank you for your application! Here are the details you've submitted:</p>
+
+        <div class="application-details">
+            <p><strong>First Name:</strong> <span id="first-name"></span></p>
+            <p><strong>Last Name:</strong> <span id="last-name"></span></p>
+            <p><strong>Organizational Title:</strong> <span id="org-title"></span></p>
+            <p><strong>Email:</strong> <span id="email"></span></p>
+            <p><strong>Cell Phone:</strong> <span id="phone"></span></p>
+            <p><strong>Organization:</strong> <span id="business-name"></span></p>
+            <p><strong>Description:</strong> <span id="description"></span></p>
+            <p><strong>Membership Level:</strong> <span id="membership-level"></span></p>
+            <p><strong>Timestamp:</strong> <span id="timestamp"></span></p>
+        </div>
+
+        <p>If you have any questions, feel free to <a href="contact.html">contact us</a>.</p>
+    </main>
+
+    <footer>
+        <p>Copyright <span id="currentyear"></span> 🔥 Matias Gabriel Gutierrez Albarracin 🔥 Santa Cruz</p>
+        <p>Last modified: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/chamber.js" defer></script>
+</body>
+</html>
