@@ -1,0 +1,27 @@
+body {
+    font-family: 'Roboto', serif;
+    background-color: #FFFFFF;
+    color: #343a40;
+    line-height: 1.6;
+    max-width: 100%;
+    min-width: 320px;
+}
+header, footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #F7F7F7;
+    color: #000088;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+h1, h2 {
+    color: #000088;
+}
+section {
+    margin: 20px;
+}
