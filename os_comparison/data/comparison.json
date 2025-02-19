@@ -1,0 +1,22 @@
+{
+    "os": [
+        {
+            "name": "Microsoft Windows",
+            "website": "https://www.microsoft.com/windows",
+            "image": "https://logo.clearbit.com/microsoft.com",
+            "description": "A widely used operating system known for its graphical user interface and compatibility with a vast range of software applications."
+        },
+        {
+            "name": "Apple macOS",
+            "website": "https://www.apple.com/macos",
+            "image": "https://logo.clearbit.com/apple.com",
+            "description": "A sophisticated operating system designed specifically for Apple's Macintosh computers, known for its sleek design and usability."
+        },
+        {
+            "name": "Linux",
+            "website": "https://www.linux.org",
+            "image": "https://logo.clearbit.com/linux.org",
+            "description": "An open-source operating system kernel that has various distributions like Ubuntu, Fedora, and CentOS, known for its customizability and security."
+        }
+    ]
+}
