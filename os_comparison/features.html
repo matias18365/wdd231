@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Operating System Features</title>
+    <meta name="description" content="A section dedicated to detailing the various features of each operating system.">
+    <meta name="author" content="Matias Gutierrez">
+    <meta property="og:title" content="OS Comparison Features Page" />
+    <meta property="og:description" content="A section dedicated to detailing the various features of each operating system." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://matias18365.github.io/wdd231/os_comparison/images/windows-vs-apple-vs-linux.jpg" />
+    <meta property="og:url" content="https://matias18365.github.io/wdd231/os_comparison/features.html" />
+    <link rel="stylesheet" href="styles/comparison.css">
+    <link rel="stylesheet" href="styles/comparison-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="icon" href="favicon_os.ico">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="images/windows-vs-apple-vs-linux.jpg" alt="Comparing Operating Systems">
+            <h1>OS Comparison</h1>
+        </div>
+        <button type="button" id="menu" title="menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="features.html" title="Features">Features</a></li>
+                <li><a href="#" title="Join">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="card2">
+        <div class="os-features">
+            <h2>Operating System Features</h2>
+            <div class="os-card" id="windows" onclick="displayOsDetails('Microsoft Windows', ['Graphical User Interface', 'Wide Software Compatibility', 'Gaming Support'], 'Windows is known for its extensive software library and is the most widely used OS.')">
+                <h3>Microsoft Windows</h3>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+            <div class="os-card" id="macos" onclick="displayOsDetails('Apple macOS', ['Sleek User Interface', 'Built-in Privacy Features', 'Optimized for Apple Hardware'], 'macOS provides a user-friendly experience and is tightly integrated with Apple hardware and services.')">
+                <h3>Apple macOS</h3>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+            <div class="os-card" id="linux" onclick="displayOsDetails('Linux', ['Open Source', 'Highly Customizable', 'Strong Security'], 'Linux is favored by developers and those who value control over their operating system.')">
+                <h3>Linux</h3>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+        </div>
+        <dialog id="os-details">
+            <form method="dialog">
+                <h2>Operating System Information</h2>
+                <div id="os-info"></div>
+                <button id="closeOsModal">✖</button>
+            </form>
+        </dialog>
+    </main>
+
+    <footer>
+        <p>Copyright <span id="currentyear"></span> 🔥 Matias Gabriel Gutierrez Albarracin 🔥 Santa Cruz</p>
+        <p>Last modified: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/comparison.js" defer></script>
+</body>
+</html>

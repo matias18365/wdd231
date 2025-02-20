@@ -174,7 +174,40 @@ main {
     color: var(--primary-color);
 }
 
+.os-card h3 {
+    color: var(--primary-color);
+}
 
+.os-features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.learn-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #2E86AB;
+    text-decoration: none;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateY(calc(100vh - 100%));
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.os-features {
+    animation-duration: 3s;
+    animation-name: slide-in;
+    animation-fill-mode: forwards;
+}
 
 footer {
     grid-row: 3 / 4;

@@ -50,4 +50,37 @@ document.addEventListener("DOMContentLoaded", function() {
             osList.appendChild(osCard);
         });
     }
+
+        const osCards = document.querySelectorAll('.os-features .os-card');
+        osCards.forEach(card => {
+            card.addEventListener('click', () => {
+                const osName = card.querySelector('h3').innerText;
+                let features, additionalInfo;
+        
+                switch(osName) {
+                    case 'Microsoft Windows':
+                        features = ['Graphical User Interface', 'Wide Software Compatibility', 'Gaming Support'];
+                        additionalInfo = 'Windows is known for its extensive software library and is the most widely used OS.';
+                        break;
+                    case 'Apple macOS':
+                        features = ['Sleek User Interface', 'Built-in Privacy Features', 'Optimized for Apple Hardware'];
+                        additionalInfo = 'macOS provides a user-friendly experience and is tightly integrated with Apple hardware and services.';
+                        break;
+                    case 'Linux':
+                        features = ['Open Source', 'Highly Customizable', 'Strong Security'];
+                        additionalInfo = 'Linux is favored by developers and those who value control over their operating system.';
+                        break;
+                }
+        
+                displayOsDetails(osName, features, additionalInfo);
+            });
+        });
+        
+        function displayOsDetails(osName, features, additionalInfo) {
+            const osInfoDiv = document.getElementById('os-info');
+            osInfoDiv.innerHTML = `<strong>${osName}</strong><p>${additionalInfo}</p><h3>Features:</h3><ul>${features.map(feature => `<li>${feature}</li>`).join('')}</ul>`;
+        
+            const dialog = document.getElementById('os-details');
+            dialog.showModal();
+        }
 });
