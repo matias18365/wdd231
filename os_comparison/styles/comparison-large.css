@@ -26,10 +26,13 @@
 		flex: 1 1 100%;
 	}
     
-    .course-card {
+    .os-card {
         width: 90%;
         margin: 0.5rem auto;
         min-width: 200px;
         min-height: 300px;
+    }
+    .os-list {
+        flex-direction: column;
     }
 }
