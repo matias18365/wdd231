@@ -149,6 +149,13 @@ main {
     margin: 1rem 0;
 }
 
+.card3{
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #c9c8c8cb;
+}
+
 .os-list {
     display: flex;
     flex-direction: column;
@@ -244,10 +251,24 @@ main {
     }
 }
 
-.os-features {
+main {
     animation-duration: 3s;
     animation-name: slide-in;
     animation-fill-mode: forwards;
+}
+
+.comparison-os-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 1rem 0;
+}
+.comparison-os-form label {
+    margin-bottom: 0.5rem;
+}
+.comparison-os-form input,
+.comparison-os-form textarea,
+.comparison-os-form select {
+    margin-bottom: 0.5rem;
 }
 
 footer {

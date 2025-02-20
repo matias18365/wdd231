@@ -83,4 +83,23 @@ document.addEventListener("DOMContentLoaded", function() {
             const dialog = document.getElementById('os-details');
             dialog.showModal();
         }
+        
+        // Function to check if on the thank you page and populate the data
+        function checkThankYouPage() {
+            if (window.location.pathname.includes("thankyou.html")) {
+                const urlParams = new URLSearchParams(window.location.search);
+
+        document.getElementById('first-name').textContent = urlParams.get('first_name') || "N/A";
+        document.getElementById('last-name').textContent = urlParams.get('last_name') || "N/A";
+        document.getElementById('org-title').textContent = urlParams.get('org_title') || "N/A";
+        document.getElementById('email').textContent = urlParams.get('email') || "N/A";
+        document.getElementById('phone').textContent = urlParams.get('phone') || "N/A";
+        document.getElementById('company-name').textContent = urlParams.get('company_name') || "N/A";
+        document.getElementById('description').textContent = urlParams.get('description') || "N/A";
+        document.getElementById('response-type').textContent = urlParams.get('response_type') || "N/A";
+        document.getElementById('timestamp').textContent = urlParams.get('timestamp') || "No timestamp available";
+    }
+}
+
+checkThankYouPage();
 });
