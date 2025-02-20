@@ -32,7 +32,10 @@
         min-width: 200px;
         min-height: 300px;
     }
+
     .os-list {
-        flex-direction: column;
+        display: grid; 
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
     }
 }

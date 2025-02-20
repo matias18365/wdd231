@@ -138,13 +138,14 @@ main {
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #272727a1;
 }
 
-.card3 {
+.card2 {
     padding: 2rem;
     border-radius: 8px;
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(43, 42, 42, 0.521);
     margin: 1rem 0;
 }
 
@@ -159,8 +160,8 @@ main {
 }
 
 .os-card {
-    background: #fff;
-    border: 1px solid #ccc;
+    background: #ffffff;
+    border: 1px solid #cccccc73;
     border-radius: 8px;
     padding: 1rem;
     margin: 0.5rem 0;
@@ -168,6 +169,11 @@ main {
     max-width: 300px;
     text-align: center;
 }
+
+.os-card p {
+    color: var(--primary-color);
+}
+
 
 
 footer {

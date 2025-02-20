@@ -16,25 +16,8 @@ document.addEventListener("DOMContentLoaded", function() {
         hamButton.classList.toggle('open');
     });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     const osList = document.getElementById("os-list");
-    const osUrl = 'https://matias18365.github.io/wdd231/os_comparison/data/comparison.js'; // URL to JSON
+    const osUrl = 'https://matias18365.github.io/wdd231/os_comparison/data/comparison.json'; // URL to JSON
 
     // Function to fetch member data
     async function fetchOs() {
