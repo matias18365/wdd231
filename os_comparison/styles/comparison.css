@@ -160,6 +160,9 @@ main {
 }
 
 .os-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background: #ffffff;
     border: 1px solid #cccccc73;
     border-radius: 8px;
@@ -178,6 +181,10 @@ main {
     color: var(--primary-color);
 }
 
+.os-card img{
+    width: 70%;
+}
+
 .os-features {
     display: flex;
     flex-direction: column;
@@ -189,6 +196,40 @@ main {
     margin-top: 10px;
     color: #2E86AB;
     text-decoration: none;
+}
+
+#os-details {
+    width: 400px;
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#os-details strong {
+    font-size: 1.5em;
+    color: var(--primary-color);
+}
+
+#os-details h3 {
+    margin-top: 1em;
+    color: var(--primary-color);
+}
+
+#os-details p {
+    margin: 0.5em 0;
+    color: #333;
+}
+
+#os-details ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+#os-details li {
+    margin: 0.5em 0;
+    color: #555;
 }
 
 @keyframes slide-in {
